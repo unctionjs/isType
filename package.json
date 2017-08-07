@@ -1,7 +1,7 @@
 {
-  "name": "@unction/template",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@unction/istype",
+  "version": "1.0.5",
+  "description": "Takes a type name and a value and returns a boolean if value is type",
   "keywords": [
     "unction",
     "functional"
@@ -44,7 +44,5 @@
     "flow-typed": "2.1.3",
     "tap": "10.3.3"
   },
-  "dependencies": {
-    "ramda": "0.24.1"
-  }
+  "dependencies": null
 }
