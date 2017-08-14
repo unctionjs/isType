@@ -45,5 +45,8 @@
     "flow-bin": "0.51.1",
     "flow-typed": "2.1.5",
     "tap": "10.3.4"
+  },
+  "dependencies": {
+    "@unction/type": "1.0.2"
   }
 }

@@ -1,4 +1,5 @@
 /* eslint-disable no-undefined */
+import type from "@unction/type"
 
 export default function isType (signature: string): Function {
   return function isTypeSignature (value: mixed): boolean {
@@ -14,6 +15,6 @@ export default function isType (signature: string): Function {
       return false
     }
 
-    return value.constructor.name === signature
+    return type(value) === signature
   }
 }
