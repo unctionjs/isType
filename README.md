@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> string -> mixed -> boolean
+> string => mixed => boolean
 
 Takes any value and then any value and returns an array containing those values.
 
