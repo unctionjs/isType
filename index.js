@@ -1,20 +1,19 @@
 /* eslint-disable no-undefined */
-import type from "@unction/type"
-
-export default function isType (signature: string): Function {
-  return function isTypeSignature (value: mixed): boolean {
+import type from "@unction/type";
+export default function isType(signature) {
+  return function isTypeSignature(value) {
     if (signature === "null") {
-      return value === null
+      return value === null;
     }
 
     if (signature === "undefined") {
-      return value === undefined
+      return value === undefined;
     }
 
     if (value === undefined || value === null) {
-      return false
+      return false;
     }
 
-    return type(value) === signature
-  }
+    return type(value) === signature;
+  };
 }
