@@ -1,64 +1,64 @@
 /* eslint-disable no-magic-numbers, no-undefined */
-import {test} from "tap"
+import {test} from "tap";
 
-import isType from "./index"
-
-test(({ok, end}) => {
-  ok(isType("null")(null))
-
-  end()
-})
+import isType from "./index";
 
 test(({ok, end}) => {
-  ok(isType("undefined")(undefined))
+  ok(isType("null")(null));
 
-  end()
-})
+  end();
+});
+
+test(({ok, end}) => {
+  ok(isType("undefined")(undefined));
+
+  end();
+});
 
 test(({notOk, end}) => {
-  notOk(isType("String")(null))
+  notOk(isType("String")(null));
 
-  end()
-})
+  end();
+});
 
 test(({notOk, end}) => {
-  notOk(isType("String")(undefined))
+  notOk(isType("String")(undefined));
 
-  end()
-})
-
-test(({ok, end}) => {
-  ok(isType("String")("b"))
-
-  end()
-})
+  end();
+});
 
 test(({ok, end}) => {
-  ok(isType("String")(""))
+  ok(isType("String")("b"));
 
-  end()
-})
-
-test(({ok, end}) => {
-  ok(isType("Object")({}))
-
-  end()
-})
+  end();
+});
 
 test(({ok, end}) => {
-  ok(isType("Array")([]))
+  ok(isType("String")(""));
 
-  end()
-})
-
-test(({ok, end}) => {
-  ok(isType("Number")(1))
-
-  end()
-})
+  end();
+});
 
 test(({ok, end}) => {
-  ok(isType("Buffer")(new Buffer("x")))
+  ok(isType("Object")({}));
 
-  end()
-})
+  end();
+});
+
+test(({ok, end}) => {
+  ok(isType("Array")([]));
+
+  end();
+});
+
+test(({ok, end}) => {
+  ok(isType("Number")(1));
+
+  end();
+});
+
+test(({ok, end}) => {
+  ok(isType("Buffer")(new Buffer("x")));
+
+  end();
+});
