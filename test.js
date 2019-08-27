@@ -1,7 +1,7 @@
 /* eslint-disable no-magic-numbers, no-undefined */
 import {test} from "tap";
 
-import isType from "./index";
+import isType from "./";
 
 test(({ok, end}) => {
   ok(isType("null")(null));
