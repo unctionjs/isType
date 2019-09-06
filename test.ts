@@ -1,5 +1,5 @@
 /* eslint-disable no-magic-numbers, no-undefined */
-import isType from "./index.ts";
+import isType from "./index";
 
 test(() => {
   expect(isType("null")(null)).toBeTruthy();
